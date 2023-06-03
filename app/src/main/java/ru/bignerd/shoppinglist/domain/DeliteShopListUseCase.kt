@@ -1,10 +1,10 @@
 package ru.bignerd.shoppinglist.domain
 
 class DeliteShopListUseCase(
-    val shopListItemRepository: ShopListItemRepository
+    val shopListRepository: ShopListRepository
 ) {
     fun deliteShopItem( shopItem:ShopItem){
-        shopListItemRepository.deliteShopItem(shopItem)
+        shopListRepository.deliteShopItem(shopItem)
 
 
     }

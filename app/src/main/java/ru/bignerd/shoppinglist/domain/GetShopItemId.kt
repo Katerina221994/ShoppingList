@@ -1,9 +1,9 @@
 package ru.bignerd.shoppinglist.domain
 
 class GetShopItemId(
-    val shopListItemRepository: ShopListItemRepository
+    val shopListRepository: ShopListRepository
 ) {
     fun getShopItemId(shopItemId:Int):ShopItem{
-      return shopListItemRepository.getShopItemId(shopItemId)
+      return shopListRepository.getShopItemId(shopItemId)
     }
 }

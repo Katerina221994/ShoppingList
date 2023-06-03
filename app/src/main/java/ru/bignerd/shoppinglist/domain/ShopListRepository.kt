@@ -1,6 +1,6 @@
 package ru.bignerd.shoppinglist.domain
 
-interface ShopListItemRepository {
+interface ShopListRepository {
     fun getShopList(): List<ShopItem>
 
     fun getShopItemId(shopItemId:Int):ShopItem

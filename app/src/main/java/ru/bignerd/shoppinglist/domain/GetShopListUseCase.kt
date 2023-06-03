@@ -1,9 +1,9 @@
 package ru.bignerd.shoppinglist.domain
 
 class GetShopListUseCase(
-    val shopListItemRepository: ShopListItemRepository
+    val shopListRepository: ShopListRepository
 ) {
     fun getShopList():List<ShopItem>{
-       return shopListItemRepository.getShopList()
+       return shopListRepository.getShopList()
     }
 }
