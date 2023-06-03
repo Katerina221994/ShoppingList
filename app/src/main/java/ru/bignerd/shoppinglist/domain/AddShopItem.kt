@@ -1,11 +1,11 @@
 package ru.bignerd.shoppinglist.domain
 
 class AddShopItem(
-    val shopListItemRepository: ShopListItemRepository
+    val shopListRepository: ShopListRepository
     ) {
 
     fun addShopItem(shopItem:ShopItem){
-        shopListItemRepository.addShopItem(shopItem)
+        shopListRepository.addShopItem(shopItem)
 
     }
 }

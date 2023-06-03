@@ -1,10 +1,10 @@
 package ru.bignerd.shoppinglist.domain
 
 class EditingShopListUseCase (
-    val shopListItemRepository: ShopListItemRepository
+    val shopListRepository: ShopListRepository
     ){
 
     fun editeShopItem(shopItem: ShopItem){
-        shopListItemRepository.editeShopItem(shopItem)
+        shopListRepository.editeShopItem(shopItem)
     }
 }
